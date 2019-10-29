@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var playPauseButton: UIButton!
+    @IBOutlet weak var playbackProgressView: UIProgressView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
+        playbackProgressView.progress = 0.0
     }
 
+    @IBAction func playPauseButtonTapped(_ sender: Any) {
+        print("playPauseButtonTapped")
+    }
 
 }
 
