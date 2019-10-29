@@ -13,6 +13,8 @@
 		A76A09632368F3AA0007AB86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76A09612368F3AA0007AB86 /* Main.storyboard */; };
 		A76A09652368F3AB0007AB86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76A09642368F3AB0007AB86 /* Assets.xcassets */; };
 		A76A09682368F3AB0007AB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76A09662368F3AB0007AB86 /* LaunchScreen.storyboard */; };
+		A7ED7637236902A700ACC858 /* ff-16b-2c-44100hz.aac in Resources */ = {isa = PBXBuildFile; fileRef = A7ED7636236902A700ACC858 /* ff-16b-2c-44100hz.aac */; };
+		A7ED7639236902B000ACC858 /* ff-16b-2c-44100hz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A7ED7638236902B000ACC858 /* ff-16b-2c-44100hz.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A76A09642368F3AB0007AB86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A76A09672368F3AB0007AB86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A76A09692368F3AB0007AB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7ED7636236902A700ACC858 /* ff-16b-2c-44100hz.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ff-16b-2c-44100hz.aac"; sourceTree = "<group>"; };
+		A7ED7638236902B000ACC858 /* ff-16b-2c-44100hz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ff-16b-2c-44100hz.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		A76A095A2368F3AA0007AB86 /* AudioEngineTest */ = {
 			isa = PBXGroup;
 			children = (
+				A7ED76352369028A00ACC858 /* SampleLocalAudioFiles */,
 				A76A095B2368F3AA0007AB86 /* AppDelegate.swift */,
 				A76A095D2368F3AA0007AB86 /* SceneDelegate.swift */,
 				A76A095F2368F3AA0007AB86 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				A76A09692368F3AB0007AB86 /* Info.plist */,
 			);
 			path = AudioEngineTest;
+			sourceTree = "<group>";
+		};
+		A7ED76352369028A00ACC858 /* SampleLocalAudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A7ED7636236902A700ACC858 /* ff-16b-2c-44100hz.aac */,
+				A7ED7638236902B000ACC858 /* ff-16b-2c-44100hz.mp3 */,
+			);
+			path = SampleLocalAudioFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7ED7639236902B000ACC858 /* ff-16b-2c-44100hz.mp3 in Resources */,
+				A7ED7637236902A700ACC858 /* ff-16b-2c-44100hz.aac in Resources */,
 				A76A09682368F3AB0007AB86 /* LaunchScreen.storyboard in Resources */,
 				A76A09652368F3AB0007AB86 /* Assets.xcassets in Resources */,
 				A76A09632368F3AA0007AB86 /* Main.storyboard in Resources */,
