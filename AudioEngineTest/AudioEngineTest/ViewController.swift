@@ -30,6 +30,8 @@ class ViewController: UIViewController {
 
     var progressMonitor: Timer?
 
+    let audioPlayer = AudioPlayer()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -39,12 +41,36 @@ class ViewController: UIViewController {
             return
         }
 
+        let streamingURL = URL(string: "https://traffic.megaphone.fm/TTH7630150098.mp3")!
+
         playbackProgressView.progress = 0.0
+
+        let urlToPlay = streamingAudio ? streamingURL : localFileURL
+
+        audioPlayer.load(urlToPlay)
     }
 
     @IBAction func playPauseButtonTapped(_ sender: Any) {
-        print("playPauseButtonTapped")
-    }
+        if audioPlayer.isPlaying {
+            audioPlayer.pause()
+            playPauseButton.setTitle(ViewController.playLabelTitle, for: .normal)
+            progressMonitor?.invalidate()
+            progressMonitor = nil
+        } else {
+            audioPlayer.play()
+            playPauseButton.setTitle(ViewController.pauseLabelTitle, for: .normal)
 
+            progressMonitor = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { [weak self] timer in
+                guard let strongSelf = self else { return }
+                if strongSelf.audioPlayer.duration > 0 {
+                    strongSelf.playbackProgressView.progress = Float(strongSelf.audioPlayer.currentPosition) / Float(strongSelf.audioPlayer.duration)
+                } else {
+                    strongSelf.playbackProgressView.progress = 0
+                }
+            })
+
+            progressMonitor?.fire()
+        }
+    }
 }
 

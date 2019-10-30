@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A74FC6E22369CAD100860779 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74FC6E12369CAD100860779 /* AudioPlayer.swift */; };
+		A74FC6E52369CD4900860779 /* AudioEnginePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74FC6E42369CD4900860779 /* AudioEnginePlayer.swift */; };
+		A74FC6E82369CDA800860779 /* SimpleEasyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74FC6E72369CDA800860779 /* SimpleEasyPlayer.swift */; };
 		A76A095C2368F3AA0007AB86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A095B2368F3AA0007AB86 /* AppDelegate.swift */; };
 		A76A095E2368F3AA0007AB86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A095D2368F3AA0007AB86 /* SceneDelegate.swift */; };
 		A76A09602368F3AA0007AB86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A095F2368F3AA0007AB86 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A74FC6E12369CAD100860779 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		A74FC6E42369CD4900860779 /* AudioEnginePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEnginePlayer.swift; sourceTree = "<group>"; };
+		A74FC6E72369CDA800860779 /* SimpleEasyPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEasyPlayer.swift; sourceTree = "<group>"; };
 		A76A09582368F3AA0007AB86 /* AudioEngineTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioEngineTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76A095B2368F3AA0007AB86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A76A095D2368F3AA0007AB86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A74FC6DF2369CA7400860779 /* AudioEnginePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A74FC6E42369CD4900860779 /* AudioEnginePlayer.swift */,
+			);
+			path = AudioEnginePlayer;
+			sourceTree = "<group>";
+		};
+		A74FC6E32369CD2A00860779 /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A74FC6E12369CAD100860779 /* AudioPlayer.swift */,
+				A74FC6E62369CD8D00860779 /* SimpleEasyPlayer */,
+				A74FC6DF2369CA7400860779 /* AudioEnginePlayer */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		A74FC6E62369CD8D00860779 /* SimpleEasyPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A74FC6E72369CDA800860779 /* SimpleEasyPlayer.swift */,
+			);
+			path = SimpleEasyPlayer;
+			sourceTree = "<group>";
+		};
 		A76A094F2368F3AA0007AB86 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +92,7 @@
 		A76A095A2368F3AA0007AB86 /* AudioEngineTest */ = {
 			isa = PBXGroup;
 			children = (
-				A7ED76352369028A00ACC858 /* SampleLocalAudioFiles */,
+				A74FC6E32369CD2A00860779 /* AudioPlayer */,
 				A76A095B2368F3AA0007AB86 /* AppDelegate.swift */,
 				A76A095D2368F3AA0007AB86 /* SceneDelegate.swift */,
 				A76A095F2368F3AA0007AB86 /* ViewController.swift */,
@@ -68,6 +100,7 @@
 				A76A09642368F3AB0007AB86 /* Assets.xcassets */,
 				A76A09662368F3AB0007AB86 /* LaunchScreen.storyboard */,
 				A76A09692368F3AB0007AB86 /* Info.plist */,
+				A7ED76352369028A00ACC858 /* SampleLocalAudioFiles */,
 			);
 			path = AudioEngineTest;
 			sourceTree = "<group>";
@@ -156,7 +189,10 @@
 			files = (
 				A76A09602368F3AA0007AB86 /* ViewController.swift in Sources */,
 				A76A095C2368F3AA0007AB86 /* AppDelegate.swift in Sources */,
+				A74FC6E82369CDA800860779 /* SimpleEasyPlayer.swift in Sources */,
 				A76A095E2368F3AA0007AB86 /* SceneDelegate.swift in Sources */,
+				A74FC6E22369CAD100860779 /* AudioPlayer.swift in Sources */,
+				A74FC6E52369CD4900860779 /* AudioEnginePlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
