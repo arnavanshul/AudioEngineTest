@@ -9,8 +9,11 @@
 import Foundation
 
 class AudioEnginePlayer: NSObject, AudioPlayerInterface {
-    func load(_ url: URL) {
+    var currentItem: AudioEnginePlayerItem? = nil
 
+    func load(_ url: URL) {
+        currentItem = AudioEnginePlayerItem(with: url)
+        currentItem?.load()
     }
 
     func play() {

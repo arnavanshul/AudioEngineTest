@@ -23,7 +23,7 @@ protocol AudioPlayerInterface: NSObjectProtocol {
 }
 
 class AudioPlayer: NSObject, AudioPlayerInterface {
-    private let useAudioEngine = false
+    private let useAudioEngine = true
 
     var internalPlayer: AudioPlayerInterface?
 
